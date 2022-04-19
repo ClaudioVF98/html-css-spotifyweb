@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify</title>
+    <link rel="icon" type="image/png" href="img/favicon.ico">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,23 +14,44 @@
 </head>
 <body>
     <header>
-        <a href="">EFFETTUA L'UPGRADE</a>
+        <a href="" class="scale_hover">EFFETTUA L'UPGRADE</a>
     </header>
 
     <div class="leftcol">
-        <img src="img/logo.svg" alt="">
-        <a href=""><i class="fas fa-home"></i> Home</a>
-        <a href=""><i class="fas fa-search"></i></i> Cerca</a>
-        <a href=""><i class="fas fa-book-open"></i></i> La tua libreria</a>
-        <h2>PLAYLIST</h2>
-        <a href=""><i id="add" class="fas fa-plus-square"></i> <span>Crea Playlist</span></a>
-        <a href="">Nome Playlist</a>
-        <a href="">Nome Playlist</a>
-        <a href="">Nome Playlist</a>
-        <a href="">Nome Playlist</a>
-        <a href="">Nome Playlist</a>
-        <a href="">Nome Playlist</a>
-        <a href="">Nome Playlist</a>
+
+
+
+        <div class="buttons_playlists">
+            <div class="top_col">
+                <img src="img/logo.svg" alt="" class="desktop_screen">
+                <img src="img/logo-small.svg" alt="" class="mobile_screen">
+                <a href="" class="desktop_screen"><i class="fas fa-home"></i> Home</a>
+                <a href="" class="mobile_screen"><i class="fas fa-home"></i></a>
+                <a href="" class="desktop_screen"><i class="fas fa-search"></i></i> Cerca</a>
+                <a href="" class="mobile_screen"><i class="fas fa-search"></i></i></a>
+                <a href="" class="desktop_screen"><i class="fas fa-book-open"></i></i> La tua libreria</a>
+                <a href="" class="mobile_screen"><i class="fas fa-book-open"></i></i></a>
+            </div>
+
+
+            <div class="playlist desktop_screen">                
+                <h2>PLAYLIST</h2>
+                <a href=""><i id="add" class="fas fa-plus-square"></i> <span>Crea Playlist</span></a>
+                <a href="">Nome Playlist</a>
+                <a href="">Nome Playlist</a>
+                <a href="">Nome Playlist</a>
+                <a href="">Nome Playlist</a>
+                <a href="">Nome Playlist</a>
+                <a href="">Nome Playlist</a>
+                <a href="">Nome Playlist</a>
+            </div>
+        </div>
+        
+        <div class="footer_col">
+            <a href=""><i class="far fa-arrow-alt-circle-down"></i> <span class="desktop_screen"> Installa App</span></a>
+            <hr class="desktop_screen"> <br>
+            <a id="user" href=""><i class="fas fa-user-circle"></i><span class="anya_profile desktop_screen"> Anya</span></a>
+        </div>
     </div>
 
     <div class="music">
@@ -44,48 +66,86 @@
         <h1>Recently Played</h1>
 
         <div class="songs">  
-            <div class="first row"> 
+            <div class="row"> 
                 <div class="album">  
-                    <img src="img/metal_lifting.jpg" alt="">
+                    <div class="play_hover">
+                        <img src="img/metal_lifting.jpg" alt="">
+                        <a href=""></a>
+                        <i id="play" class="far fa-play-circle"></i>
+                    </div>
                     <h2>Heavy Metal</h2>
                     <p>Subtitle</p>
                 </div>   
-                <div class="album">  
-                    <img src="img/stranger.jpeg" alt="">
+                
+                <div class="album"> 
+                    <div class="play_hover">
+                        <img src="img/stranger.jpeg" alt="" class="">
+                        <a href=""></a>
+                        <i id="play" class="far fa-play-circle"></i>
+                    </div>
                     <h2>Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</h2>
                     <p>Kyle Dixon & Michael Stein</p>
                 </div>  
+
                 <div class="album">  
-                    <img src="img/aquietplace.jpeg" alt="">
+                    <div class="play_hover">
+                        <img src="img/aquietplace.jpeg" alt="" class="">
+                        <a href=""></a>
+                        <i id="play" class="far fa-play-circle"></i>
+                    </div>
                     <h2>A quiet place</h2>
                     <p>Subtitle</p>
                 </div> 
+
                 <div class="album">  
-                    <img src="img/split.jpeg" alt="">
+                    <div class="play_hover">
+                        <img src="img/split.jpeg" alt="" class="">
+                        <a href=""></a>
+                        <i id="play" class="far fa-play-circle"></i>
+                    </div>
                     <h2>Split</h2>
                     <p>Subtitle</p>
                 </div> 
+
                 <div class="album">  
-                    <img src="img/cure.jpeg" alt="">
+                    <div class="play_hover">
+                        <img src="img/cure.jpeg" alt="" class="">
+                        <a href=""></a>
+                        <i id="play" class="far fa-play-circle"></i>
+                    </div>
                     <h2>A cure for wellness</h2>
                     <p>Subtitle</p>
                 </div> 
+
                 <div class="album">  
-                    <img src="img/sinister.jpeg" alt="">
+                    <div class="play_hover">
+                        <img src="img/sinister.jpeg" alt="" class="">
+                        <a href=""></a>
+                        <i id="play" class="far fa-play-circle"></i>
+                    </div>
                     <h2>Sinister</h2>
                     <p>Subtitle</p>
-                </div>  
+                </div> 
             </div>     
 
             <h1>Creato per Anya</h1>
             <p>Più ascolti, più accurati saranno i suggerimenti.</p>
-            <div class="second row">
+            <div class="row">
                 <div class="album">  
-                    <img src="img/radar.jpeg" alt="">
+                    <div class="play_hover">
+                        <img src="img/radar.jpeg" alt="" class="">
+                        <a href=""></a>
+                        <i id="play" class="far fa-play-circle"></i>
+                    </div>
                     <h2>Release Radar</h2>
                 </div>
+
                 <div class="album">  
-                    <img src="img/mixdaily.jpeg" alt="">
+                    <div class="play_hover">
+                        <img src="img/mixdaily.jpeg" alt="" class="">
+                        <a href=""></a>
+                        <i id="play" class="far fa-play-circle"></i>
+                    </div>
                     <h2>Daily Mix 1</h2>
                 </div>
             </div>
@@ -94,20 +154,66 @@
             <p>Più ascolti, più accurati saranno i suggerimenti.</p>
             <div class="third row">
                 <div class="album">  
-                    <img src="img/youg.jpeg" alt="">
+                    <div class="play_hover">
+                        <img src="img/youg.jpeg" alt="" class="">
+                        <a href=""></a>
+                        <i id="play" class="far fa-play-circle"></i>
+                    </div>
                     <h2>Lana Del Rey</h2>
                 </div>  
+                
                 <div class="album">  
-                    <img src="img/einaudi.jpeg" alt="">
+                    <div class="play_hover">
+                        <img src="img/einaudi.jpeg" alt="" class="">
+                        <a href=""></a>
+                        <i id="play" class="far fa-play-circle"></i>
+                    </div>
                     <h2>Ludovico Einaudi</h2>
                 </div>  
             </div>
 
-            </div>
         </div>
     </div>
     
     <footer>
+        <div class="left_footer">
+            <img src="img/sinister.jpeg" alt="">
+            <div class="info_song">
+                <span class="song_name">Sinister</span> <br>
+                <span class="author_name">Brano Nome</span>   
+            </div>
+            <div class="heart_folder">
+                <a class="heart_folder_buttons" href=""><i class="far fa-heart"></i></a>
+                <a class="heart_folder_buttons" href=""><i class="far fa-folder"></i></a>    
+            </div>       
+        </div>
+
+        <div class="center_footer">
+            <div class="top_center_footer">
+                <a href=""><i id="white" class="fas fa-random"></i></a>
+                <a href=""><i id="white" class="fas fa-step-backward"></i></a>
+                <a href=""><i id="white" class="fas fa-play-circle play_button"></i></a>
+                <a href=""><i id="white" class="fas fa-step-forward"></i></a>
+                <a href=""><i id="white" class="fas fa-redo-alt"></i></a>
+            </div>
+
+            <div class="bottom_center_footer"> 
+                <span>0.45</span>      
+                <div class="song_slider_center">
+                    <input type="range" value="0" class="seek_bar_center">
+                </div>             
+                <span>4.25</span>            
+            </div>
+        </div>
+
+        <div class="right_footer">
+            <a href=""><i id="tiny_white" class="fas fa-list"></i></a>
+            <a href=""><i id="tiny_white" class="fas fa-desktop"></i></a>
+            <a href=""><i id="tiny_white" class="fas fa-volume-up"></i></a>
+            <div class="song_slider_right">
+                <input type="range" value="0" class="seek_bar_right">
+            </div>  
+        </div>
     </footer>
 </body>
 </html>
